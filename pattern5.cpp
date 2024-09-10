@@ -11,7 +11,7 @@ int main(){
         int j = 1;
         while (j<=n)
         {
-            cout << count;
+            cout << count << "\t";
             count += 1;
             j += 1;
         }
