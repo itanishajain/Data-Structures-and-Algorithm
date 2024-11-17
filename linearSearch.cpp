@@ -4,7 +4,7 @@ using namespace std;
 int linearSearch(int ar[], int size, int ele){
     for(int i=0; i<size; i++){
         if(ar[i]==ele){
-            return 1;
+            return i;
         }
     }
     return 0;
@@ -25,9 +25,9 @@ int main(){
     cout << "Element to be found: ";
     cin >> key;
     
-    bool found = linearSearch(arr, size, key);
-    if(found){
-        cout << "Element is found." << endl;
+    int index = linearSearch(arr, size, key);
+    if(index >= 0){
+        cout << "Element is found a index : " << index << endl;
     }
     else{
         cout << "Element is not found." << endl;
