@@ -40,16 +40,16 @@ int main(){
     switch (num)
     {
     case 100:
-        cout << "No of 100 rupee note to calculate the amount : 13 \n";
+        cout << "No of 100 rupee note to calculate the total amount : 13 \n";
         break;
     case 50:
-        cout << "No of 100 rupee note to calculate the amount : 0 \n";
+        cout << "No of 100 rupee note to calculate the total amount : 0 \n";
         break;
     case 20:
-        cout << "No of 100 rupee note to calculate the amount : 1 \n";
+        cout << "No of 100 rupee note to calculate the total amount : 1 \n";
         break;
     case 1:
-        cout << "No of 100 rupee note to calculate the amount : 10 \n";
+        cout << "No of 100 rupee note to calculate the total amount : 10 \n";
         break;
     default:
         break;
