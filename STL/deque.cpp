@@ -18,7 +18,7 @@ int main(){
         cout << d[i] << endl;
     }
     cout << "front elelment: " << d.front() << endl;
-    cout << "last elelment: " << d.back() << endl;
+    cout << "last element: " << d.back() << endl;
 
     cout << "Before erase size : " << d.size() << endl;
     d.erase(d.begin(),d.begin()+1);  // It is erasing the secong element
