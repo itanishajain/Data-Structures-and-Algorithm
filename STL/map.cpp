@@ -23,5 +23,12 @@ int main() {
     for (const auto& i : m) {
         cout << i.first <<" " << i.second << endl;
     }
+
+    auto it = m.find(3);
+    if (it != m.end()) {
+        cout << "Found: " << it->first << " " << it->second << endl;
+    } else {
+        cout << "Not found" << endl;
+    }
     return 0;
 }
