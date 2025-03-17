@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-bool SearchInRow(vector<vector<int>>& mat, int tar, int row) {
+bool SearchInRow(vector<vector<int> >& mat, int tar, int row) {
     int n = mat[0].size();
     int start = 0, end = n - 1;
     while (start <= end) {
@@ -18,7 +18,7 @@ bool SearchInRow(vector<vector<int>>& mat, int tar, int row) {
     return false;
 }
 
-bool searchMatrix(vector<vector<int>>& mat, int tar) {
+bool searchMatrix(vector<vector<int> >& mat, int tar) {
     int m = mat.size(), n = mat[0].size();
     int startRow = 0, endRow = m - 1;
     while (startRow <= endRow) {
