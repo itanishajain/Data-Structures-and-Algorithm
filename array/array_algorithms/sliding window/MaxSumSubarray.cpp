@@ -16,6 +16,21 @@ int MaxSumSub(vector<int> v, int n, int k){
     return maxSum;
 }
 
+// More optimised way
+
+int MaximumSum(vector<int> v, int n, int k){
+    int sum=0, maxSum=0;
+    for(int i=0; i<k; i++){
+        sum += v[i];
+    }
+    maxSum = sum;
+    for(int i=1; i<=n-k; i++){
+        sum = sum - v[i-1] + v[i+k-1];
+        maxSum = max(sum, maxSum);
+    }
+    return maxSum;
+}
+
 int main(){
     int n,ele,k;
     cout << "Enter size: ";
@@ -30,16 +45,7 @@ int main(){
     cin >> k;
     cout << "Manimum sum of subarray is: " << endl;
     cout << "Brute force method " << MaxSumSub(v,n,k) << endl;
-    cout << "more optimised method " << MaxSumSub(v,n,k) << endl;
+    cout << "more optimised method " << MaximumSum(v,n,k) << endl;
     return 0;
 }
 
-// More optimised way
-int sum=0, maxSum=0;
-int MaximumSum(vector<int> v, int n, int k){
-    for(int i=0; i<=n-k; i++){
-        sum = sum - v[i-1] + v[i+k-1];
-        maxSum = max(sum, maxSum);
-    }
-    return maxSum;
-}
