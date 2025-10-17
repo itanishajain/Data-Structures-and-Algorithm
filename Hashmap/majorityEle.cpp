@@ -8,7 +8,7 @@ int MajorityElement(vector<int>& arr, int n){
     int ele;
     for(int val : arr){
         mj[val]++;
-        if(mj[val] > 1) ele = val;
+        if(mj[val] > n/2) ele = val;
     }
     return ele;
 }
