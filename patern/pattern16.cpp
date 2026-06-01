@@ -6,14 +6,11 @@ int main(){
     cin >> n;
 
     int i = 1;
-    char ch = 'A';
     while(i<=n){
         int j = 1;
-        
-        while(j<=i){
-            
+        while(j<=n){
+            char ch = 'A';
             cout << ch << "\t";
-            ch++;
             j++;
         }
         cout << endl;
